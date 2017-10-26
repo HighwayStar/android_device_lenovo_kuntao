@@ -26,7 +26,6 @@ vendor/lib/rfsa/adsp/libscveT2T_skel.so
 vendor/lib/rfsa/adsp/libscveTextReco_skel.so
 
 # Audio
-lib/hw/audio.primary.msm8953.so
 vendor/lib/hw/sound_trigger.primary.msm8953.so
 vendor/lib/libadpcmdec.so
 vendor/lib/libsmwrapper.so
@@ -47,7 +46,6 @@ vendor/lib/libaudiodevarb.so
 vendor/lib/libdrc.so
 vendor/lib/libqct_resampler.so
 vendor/lib/libsurround_3mic_proc.so
-lib64/hw/audio.primary.msm8953.so
 vendor/lib64/soundfx/libqcbassboost.so
 vendor/lib64/soundfx/libqcreverb.so
 vendor/lib64/soundfx/libqcvirt.so
