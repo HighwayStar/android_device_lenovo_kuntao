@@ -81,11 +81,8 @@ USE_DEVICE_SPECIFIC_CAMERA := true
 # Charger
 BOARD_CHARGER_ENABLE_SUSPEND := true
 
-# CMHW
-BOARD_USES_CYANOGEN_HARDWARE := true
-BOARD_HARDWARE_CLASS += \
-    hardware/cyanogen/cmhw \
-    $(DEVICE_PATH)/cmhw
+# CNE / DPM
+BOARD_USES_QCNE := true
 
 # Encryption
 TARGET_HW_DISK_ENCRYPTION := true
@@ -121,6 +118,10 @@ TARGET_KERNEL_SOURCE := kernel/lenovo/msm8953
 # Lights
 TARGET_PROVIDES_LIBLIGHT := true
 
+# Lineage Hardware
+BOARD_HARDWARE_CLASS += \
+    $(DEVICE_PATH)/lineagehw
+
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
 
@@ -139,6 +140,10 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Power
 TARGET_POWERHAL_VARIANT := qcom
 TARGET_TAP_TO_WAKE_NODE := "/sys/board_properties/tpd_suspend_status"
+TARGET_HAS_NO_WIFI_STATS := true
+
+# Properties
+TARGET_SYSTEM_PROP := $(DEVICE_PATH)/system.prop
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
