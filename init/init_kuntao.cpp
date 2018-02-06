@@ -38,6 +38,8 @@
 
 using android::base::Trim;
 
+using android::init::property_set;
+
 static void init_alarm_boot_properties()
 {
     char const *boot_reason_file = "/proc/sys/kernel/boot_reason";
